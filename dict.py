@@ -109,7 +109,7 @@ for key, value in ssafy["language"]["python"]["frameworks"].items():
     # 오늘 당번은 문동식입니다.
 
 b = ssafy["classes"]["gj1"]["groups"]['살핌']
-print(b)
-for value in ssafy["classes"]["gj1"]["groups"]['살핌']:
-        pick = random.sample(b,1)
+
+for value in ssafy["classes"]["gj1"]["groups"]['살핌']: 
+        pick = random.choice(b)             #random.sample()은 리스트를 반환한다!!!!! 한개만 뽑을거면 random.choice() 사용
 print("오늘 당번은 ",pick,"입니다")
